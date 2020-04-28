@@ -1,6 +1,22 @@
 $color-primary: crimson;
 $color-secondary: cornflowerblue;
 
+// center content
+@mixin absCenterPosition() {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// create box shadow
+@mixin box-shadow($x, $y, $blur, $spread) {
+  -webkit-box-shadow: $x $y $blur $spread;
+  -moz-box-shadow: $x $y $blur $spread;
+  -ms-box-shadow: $x $y $blur $spread;
+  box-shadow: $x $y $blur $spread;
+}
+
 .layout {
   height: 100vh;
   display: grid;
@@ -15,4 +31,27 @@ $color-secondary: cornflowerblue;
 .content {
   height: 100%;
   background: $color-secondary;
+}
+
+// box using @mixin
+
+.box {
+  background-color: red;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+
+  div {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    // add @mixin
+    // position: absolute;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+    @include absCenterPosition;
+    // args using @mixin
+    @include box-shadow(0, 5px, 5px, rgba(0, 0, 0, 0.7));
+  }
 }
