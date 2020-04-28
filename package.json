@@ -1,0 +1,24 @@
+{
+  "name": "scss-reference",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile-sass": "node-sass ./sass/main.scss ./css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vpvnguyen/scss-reference.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vpvnguyen/scss-reference/issues"
+  },
+  "homepage": "https://github.com/vpvnguyen/scss-reference#readme",
+  "devDependencies": {
+    "node-sass": "^4.14.0"
+  }
+}
