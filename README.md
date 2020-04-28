@@ -1,4 +1,4 @@
-SCSS Reference
+# SCSS Reference
 
 - Create standard html and css layout
 - css to be converted to sass later
