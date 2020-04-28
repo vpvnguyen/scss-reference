@@ -22,7 +22,7 @@ A CSS preprocessor is a language that extends CSS, adds features to CSS and gets
 }
 ```
 
-> Script will compile the `main.scss` into the a css file as `style.css` when ran
+> Script will compile the `main.scss` into the a css file as `style.css` when `npm run sass` is ran
 
 - Now, in `main.scss`, you can use SASS to create variables to set certain styles.
 
